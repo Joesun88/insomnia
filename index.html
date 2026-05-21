@@ -175,6 +175,7 @@ model-viewer {
 
   camera-controls
   auto-rotate
+  autoplay
   rotation-per-second="15deg"
 
 /*  environment-image="https://modelviewer.dev/shared-assets/environments/spruit_sunrise_1k_HDR.hdr" */
@@ -204,11 +205,11 @@ model-viewer {
 const mv = document.querySelector("#mv");
 
 /* 初始材質設定 */
-mv.addEventListener("load", () => {
-  mv.model.materials.forEach(mat => {
-    mat.pbrMetallicRoughness.setBaseColorFactor([1,0.82,0.15,0.3])
-  });
-});
+/* mv.addEventListener("load", () => { */
+/*  mv.model.materials.forEach(mat => { */
+/*    mat.pbrMetallicRoughness.setBaseColorFactor([1,0.82,0.15,0.3]) */
+/*  }); */
+/* }); */
 
 /* Panel Toggle */
 function togglePanel() {
